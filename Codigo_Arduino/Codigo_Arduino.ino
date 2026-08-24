@@ -1,8 +1,6 @@
-// ==============================================================================
 // PROYECTO: Control de Carroza - Semana de la Estudiantina
-// AUTOR: David y el equipo técnico
+// AUTOR: David 
 // HARDWARE: Arduino Nano, HC-05 (Bluetooth), ULN2003, Módulo de 12 Relés
-// ==============================================================================
 
 // Array con los pines digitales usados para los 12 relés (D2 a D13)
 // IMPORTANTE: El índice del array empieza en 0.

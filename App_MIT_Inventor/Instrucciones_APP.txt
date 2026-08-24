@@ -1,6 +1,6 @@
 INSTRUCCIONES PARA MODIFICAR LA APP EN MIT APP INVENTOR
 =======================================================
-Hola chicos. Aquí David y el equipo técnico. 
+Hola chicos. Aquí David. 
 Sigan estos pasos al pie de la letra para que la app no explote. 
 (Tranquilos, es a prueba de errores si saben leer y copiar).
 
