@@ -1,0 +1,58 @@
+INSTRUCCIONES PARA MODIFICAR LA APP EN MIT APP INVENTOR
+=======================================================
+Hola chicos. Aquí David y el equipo técnico. 
+Sigan estos pasos al pie de la letra para que la app no explote. 
+(Tranquilos, es a prueba de errores si saben leer y copiar).
+
+1. PREPARACIÓN INICIAL
+   - Entren a MIT App Inventor y abran el proyecto (.aia).
+   - Vayan a la vista de "Blocks" (arriba a la derecha).
+
+2. BOTONES DE MOVIMIENTO (Adelante, Atrás, Izquierda, Derecha) - MODO MOMENTÁNEO
+   Queremos que la carroza se mueva SOLO mientras mantienes el dedo en la pantalla.
+   
+   - Para el botón "Adelante" (Relé 1):
+     a) Busquen el bloque amarillo: `when Boton_Adelante.TouchDown do`
+     b) Adentro, pongan el bloque morado para enviar texto por Bluetooth: 
+        `call BluetoothClient1.SendText text "A"` (¡LA 'A' MAYÚSCULA ENCIENDE!)
+     c) Ahora busquen el bloque amarillo: `when Boton_Adelante.TouchUp do`
+     d) Adentro, pongan: 
+        `call BluetoothClient1.SendText text "a"` (¡LA 'a' MINÚSCULA APAGA!)
+
+   - Repitan esto para los otros 3 botones:
+     Boton_Atras -> TouchDown envia "B" / TouchUp envia "b"
+     Boton_Izquierda -> TouchDown envia "C" / TouchUp envia "c"
+     Boton_Derecha -> TouchDown envia "D" / TouchUp envia "d"
+
+3. BOTONES DE ACCESORIOS Y LUCES (Relé 5 al 12) - MODO TOGGLE
+   Queremos que presiones una vez y se prenda, y presiones de nuevo y se apague.
+   
+   - Vamos a necesitar VARIABLES para recordar si está prendido o apagado.
+   - Para el Relé 5:
+     a) Creen una variable global (naranja): `initialize global estado_rele5 to false`
+     b) Busquen el bloque del botón: `when Boton_Rele5.Click do`
+     c) Adentro pongan un bloque de control (if/then/else):
+        if `get global estado_rele5` == false then:
+            `call BluetoothClient1.SendText text "E"`
+            `set global estado_rele5 to true`
+        else:
+            `call BluetoothClient1.SendText text "e"`
+            `set global estado_rele5 to false`
+
+   - Repitan esta lógica exacta para los botones 6 al 12, usando su letra correspondiente:
+     Relé 6 -> Click usa "F" y "f", variable estado_rele6
+     Relé 7 -> Click usa "G" y "g", variable estado_rele7
+     Relé 8 -> Click usa "H" y "h", variable estado_rele8
+     Relé 9 -> Click usa "I" y "i", variable estado_rele9
+     Relé 10 -> Click usa "J" y "j", variable estado_rele10
+     Relé 11 -> Click usa "K" y "k", variable estado_rele11
+     Relé 12 -> Click usa "L" y "l", variable estado_rele12
+
+4. BOTÓN DE EMERGENCIA (¡EL BOTÓN DEL PÁNICO!)
+   Este botón apaga todo de un solo golpe (manda la señal X que apaga todos los relés).
+   
+   - Busquen el bloque: `when Boton_Emergencia.Click do`
+   - Adentro pongan: `call BluetoothClient1.SendText text "X"`
+   - (Opcional, pero muy recomendado): Si apretaron emergencia, también pongan todas las variables globales de estado (estado_rele5 hasta estado_rele12) en `false`, así la app recuerda que todo se acaba de apagar en caso de que quieran volver a prender algo.
+
+¡Y LISTO! Compilen la app (.apk), pásenla al celular y a probarla. ¡No rompan la carroza!
