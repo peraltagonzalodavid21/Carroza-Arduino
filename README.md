@@ -7,7 +7,7 @@ Aca aunque ya me conozcan dejo mi nombre y promo por si este repo se sigue utili
 
 Alumno: Peralta Gonzalo David
 Promo: 2025
-Colegio: E.P.E.T N°12 
+Colegio: E.P.E.T N°12
 Año: 2026
 
 ## Hardware del Proyecto
@@ -16,7 +16,7 @@ El sistema de control funciona con los siguientes componentes:
 * Microcontrolador: Arduino Nano (se utilizan todos los pines digitales del D2 al D13, 12 salidas en total).
 * Módulo Bluetooth: HC-05 (para la conexión con la aplicación).
 * Drivers de Potencia: ULN2003 para el manejo seguro de los relés.
-* Actuadores: 12 Relés de 12V (4 para movimiento, 8 para accesorios/luces).
+* Actuadores: 12 Relés de 5V (4 para movimiento, 8 para accesorios/luces).
 * Alimentación: Módulo Step-down LM2596 (Regula de 12V a 5V para alimentar la lógica).
 
 ## Diagrama de Pines (Pinout) y Mapeo Bluetooth
