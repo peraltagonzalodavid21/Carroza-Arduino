@@ -31,7 +31,7 @@ Desarrollar un sistema de control inalámbrico para la carroza de la Semana de l
 
 ---
 
-## 3. CRONOGRAMA Y HITOS
+## 3. CRONOGRAMA E HITOS
 
 | Fecha | Hito / Actividad |
 | :--- | :--- |
@@ -39,7 +39,8 @@ Desarrollar un sistema de control inalámbrico para la carroza de la Semana de l
 | [DD/MM] | [Descripción, ej: Primeras pruebas en protoboard] |
 | [DD/MM] | [Descripción, ej: Fabricación de la PCB] |
 | [DD/MM] | [Descripción, ej: Armado final y pruebas en carroza] |
-
+| 25/08 | Desoldar HC-05|
+| 25/08 | Conseguir cable de mando de PS3 |
 *(Completar con las fechas reales del año correspondiente)*
 
 ---
