@@ -39,8 +39,9 @@ Desarrollar un sistema de control inalámbrico para la carroza de la Semana de l
 | [DD/MM] | [Descripción, ej: Primeras pruebas en protoboard] |
 | [DD/MM] | [Descripción, ej: Fabricación de la PCB] |
 | [DD/MM] | [Descripción, ej: Armado final y pruebas en carroza] |
-| 25/08 | Desoldar HC-05|
-| 25/08 | Conseguir cable de mando de PS3 |
+| 26/08 | Desoldado del HC-05 para pruebas con el Arduino Nano. |
+| 26/08 | Preparación de planchas para la colocación de los finales de carrera. |
+| 28/08 | Colocación de los finales de carrera. |
 *(Completar con las fechas reales del año correspondiente)*
 
 ---
