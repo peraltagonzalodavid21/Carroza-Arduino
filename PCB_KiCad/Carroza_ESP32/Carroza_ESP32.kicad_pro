@@ -648,7 +648,7 @@
         "uuid": "0dde419f-2b18-4e24-acee-ec448777424b"
       }
     ],
-    "used_designators": "+12v1,J1-2,J15-16,\\-12v1,5v1,GND1,#PWR6-7",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
